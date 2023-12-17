@@ -1,0 +1,63 @@
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.service-item {
+  border: 1px solid gray;
+  padding: 10px 21px;
+  border-radius: 50px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.service-icon {
+  margin-right: 5px;
+
+}
+
+.service-icon.bi-card-image{
+ color: gray;
+}
+.service-icon.bi-people-fill{
+ color: rgb(52, 5, 96);
+}
+.service-icon.bi-buildings{
+ color: var(--orange_color);
+}
+.service-icon.bi-globe{
+ color: #10000e;
+}
+
+@media (max-width : 920px) {
+
+  .service-item {
+    padding: 7px 17px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width : 720px) {
+  .services {
+flex-wrap: wrap;
+  }
+
+  .service-item {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    font-size: 20px;
+    width: 45%;
+  }
+}
+
+@media (max-width : 520px) {
+  .service-item {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    font-size: 24px;
+    width: 90%;
+    text-align: center;
+  }
+}
